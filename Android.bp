@@ -9627,6 +9627,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libwa_opticalzoomfactor",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwa_opticalzoomfactor.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libm",
+                "liblog",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libwa_refocus",
     owner: "nothing",
     strip: {
@@ -9670,6 +9694,30 @@ cc_prebuilt_library_shared {
                 "libGLESv3",
                 "libEGL",
                 "libnativewindow",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwa_sat",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwa_sat.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libm",
+                "liblog",
                 "libc",
             ],
         },
@@ -22659,56 +22707,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libwa_opticalzoomfactor",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6878/libwa_opticalzoomfactor.so",
-            ],
-            shared_libs: [
-                "libdl",
-                "libm",
-                "liblog",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "mt6878",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwa_sat",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6878/libwa_sat.so",
-            ],
-            shared_libs: [
-                "libdl",
-                "libm",
-                "liblog",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "mt6878",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "mtk000_mipi_raw_IdxMgr",
     owner: "nothing",
     strip: {
@@ -30210,20 +30208,6 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/libvega_common.so",
     symlink_target: "/vendor/lib64/mt6878/libvega_common.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_libwa_opticalzoomfactor_so",
-    soc_specific: true,
-    installed_location: "lib64/libwa_opticalzoomfactor.so",
-    symlink_target: "/vendor/lib64/mt6878/libwa_opticalzoomfactor.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_libwa_sat_so",
-    soc_specific: true,
-    installed_location: "lib64/libwa_sat.so",
-    symlink_target: "/vendor/lib64/mt6878/libwa_sat.so",
 }
 
 install_symlink {

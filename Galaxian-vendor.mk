@@ -6,10 +6,17 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/nothing/Galaxian
 
 PRODUCT_COPY_FILES += \
+    vendor/nothing/Galaxian/proprietary/system/etc/morpho_image_refiner_tuning_params.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/morpho_image_refiner_tuning_params.xml \
     vendor/nothing/Galaxian/proprietary/system/etc/sysconfig/nothing-hiddenapi-package-allowlist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/nothing-hiddenapi-package-allowlist.xml \
     vendor/nothing/Galaxian/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
+    vendor/nothing/Galaxian/proprietary/system_ext/etc/init/nt_performance_config.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/nt_performance_config.rc \
+    vendor/nothing/Galaxian/proprietary/system_ext/etc/init/nt_performance_init.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/nt_performance_init.rc \
+    vendor/nothing/Galaxian/proprietary/system_ext/etc/nt_performance/cmd_table.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/nt_performance/cmd_table.xml \
     vendor/nothing/Galaxian/proprietary/system_ext/etc/permissions/advancedSample_camera_extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/advancedSample_camera_extensions.xml \
     vendor/nothing/Galaxian/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
+    vendor/nothing/Galaxian/proprietary/system_ext/etc/permissions/com.nothing.feature.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.nothing.feature.xml \
+    vendor/nothing/Galaxian/proprietary/system_ext/etc/permissions/gallery-google-lens-permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/gallery-google-lens-permissions.xml \
+    vendor/nothing/Galaxian/proprietary/system_ext/etc/permissions/google-lens-permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/google-lens-permissions.xml \
     vendor/nothing/Galaxian/proprietary/system_ext/etc/permissions/privapp-permissions-NTCamera.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-NTCamera.xml \
     vendor/nothing/Galaxian/proprietary/system_ext/etc/permissions/privapp-permissions-NothingExperience.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-NothingExperience.xml \
     vendor/nothing/Galaxian/proprietary/system_ext/etc/sysconfig/com.mediatek.ims.config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.mediatek.ims.config.xml \
@@ -253,6 +260,136 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaxian/proprietary/vendor/etc/camera/anc_supermoon_params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_supermoon_params.json \
     vendor/nothing/Galaxian/proprietary/vendor/etc/camera/anc_yuv_svq/supervq_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_yuv_svq/supervq_model \
     vendor/nothing/Galaxian/proprietary/vendor/etc/camera/anc_yuv_svq/svq_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_yuv_svq/svq_cache \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/aifeiertieta/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/aifeiertieta/config.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/aifeiertieta/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/aifeiertieta/content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/aifeiertieta/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/aifeiertieta/effect.mk \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/aifeiertieta/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/aifeiertieta/effect_content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/aifeiertieta/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/aifeiertieta/filter.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/aifeiertieta/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/aifeiertieta/filter_effect3.fs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/aifeiertieta/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/aifeiertieta/filter_effect3.vs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/aifeiertieta/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/aifeiertieta/icon.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/aifeiertieta/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/aifeiertieta/params.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/boli/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/boli/content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/boli/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/boli/effect_content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/boli/hsl.vert:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/boli/hsl.vert \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/boli/len.frag:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/boli/len.frag \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/boli/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/boli/params.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/feilin/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilin/config.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/feilin/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilin/content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/feilin/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilin/effect.mk \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/feilin/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilin/effect_content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/feilin/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilin/filter.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/feilin/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilin/filter_effect3.fs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/feilin/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilin/filter_effect3.vs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/feilin/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilin/icon.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/feilin/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilin/params.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/feilinheibai/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilinheibai/config.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/feilinheibai/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilinheibai/content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/feilinheibai/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilinheibai/effect.mk \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/feilinheibai/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilinheibai/effect_content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/feilinheibai/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilinheibai/filter.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/feilinheibai/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilinheibai/filter_effect3.fs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/feilinheibai/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilinheibai/filter_effect3.vs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/feilinheibai/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilinheibai/icon.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/feilinheibai/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilinheibai/params.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/fupian/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupian/config.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/fupian/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupian/content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/fupian/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupian/effect.mk \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/fupian/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupian/effect_content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/fupian/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupian/filter.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/fupian/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupian/filter_effect3.fs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/fupian/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupian/filter_effect3.vs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/fupian/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupian/icon.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/fupian/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupian/params.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/fupianV2/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupianV2/config.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/fupianV2/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupianV2/content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/fupianV2/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupianV2/effect.mk \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/fupianV2/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupianV2/effect_content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/fupianV2/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupianV2/filter.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/fupianV2/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupianV2/filter_effect3.fs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/fupianV2/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupianV2/filter_effect3.vs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/fupianV2/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupianV2/icon.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/fupianV2/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupianV2/params.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/heibaidianying/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/heibaidianying/config.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/heibaidianying/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/heibaidianying/content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/heibaidianying/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/heibaidianying/effect.mk \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/heibaidianying/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/heibaidianying/effect_content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/heibaidianying/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/heibaidianying/filter.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/heibaidianying/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/heibaidianying/filter_effect3.fs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/heibaidianying/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/heibaidianying/filter_effect3.vs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/heibaidianying/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/heibaidianying/icon.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/heibaidianying/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/heibaidianying/params.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/lengdiao/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/lengdiao/config.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/lengdiao/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/lengdiao/content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/lengdiao/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/lengdiao/effect.mk \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/lengdiao/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/lengdiao/effect_content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/lengdiao/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/lengdiao/filter.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/lengdiao/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/lengdiao/filter_effect3.fs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/lengdiao/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/lengdiao/filter_effect3.vs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/lengdiao/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/lengdiao/icon.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/lengdiao/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/lengdiao/params.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/meishi/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/meishi/config.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/meishi/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/meishi/content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/meishi/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/meishi/effect.mk \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/meishi/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/meishi/effect_content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/meishi/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/meishi/filter.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/meishi/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/meishi/filter_effect3.fs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/meishi/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/meishi/filter_effect3.vs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/meishi/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/meishi/icon.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/meishi/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/meishi/params.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/nuandiao/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/nuandiao/config.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/nuandiao/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/nuandiao/content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/nuandiao/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/nuandiao/effect.mk \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/nuandiao/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/nuandiao/effect_content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/nuandiao/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/nuandiao/filter.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/nuandiao/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/nuandiao/filter_effect3.fs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/nuandiao/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/nuandiao/filter_effect3.vs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/nuandiao/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/nuandiao/icon.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/nuandiao/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/nuandiao/params.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/stretch/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/stretch/config.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/stretch/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/stretch/content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/stretch/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/stretch/effect.mk \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/stretch/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/stretch/effect_content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/stretch/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/stretch/filter.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/stretch/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/stretch/filter_effect3.fs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/stretch/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/stretch/filter_effect3.vs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/stretch/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/stretch/params.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/yinyan/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/yinyan/config.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/yinyan/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/yinyan/content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/yinyan/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/yinyan/effect.mk \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/yinyan/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/yinyan/effect_content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/yinyan/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/yinyan/filter.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/yinyan/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/yinyan/filter_effect3.fs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/yinyan/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/yinyan/filter_effect3.vs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/yinyan/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/yinyan/icon.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/yinyan/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/yinyan/params.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/zhengpian/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhengpian/config.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/zhengpian/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhengpian/content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/zhengpian/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhengpian/effect.mk \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/zhengpian/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhengpian/effect_content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/zhengpian/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhengpian/filter.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/zhengpian/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhengpian/filter_effect3.fs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/zhengpian/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhengpian/filter_effect3.vs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/zhengpian/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhengpian/icon.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/zhengpian/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhengpian/params.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/zhigan/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhigan/config.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/zhigan/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhigan/content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/zhigan/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhigan/effect.mk \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/zhigan/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhigan/effect_content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/zhigan/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhigan/filter.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/zhigan/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhigan/filter_effect3.fs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/zhigan/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhigan/filter_effect3.vs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/zhigan/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhigan/icon.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/zhigan/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhigan/params.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/ziran/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/ziran/config.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/ziran/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/ziran/content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/ziran/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/ziran/effect.mk \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/ziran/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/ziran/effect_content.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/ziran/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/ziran/filter.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/ziran/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/ziran/filter_effect3.fs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/ziran/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/ziran/filter_effect3.vs \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/ziran/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/ziran/icon.png \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/camera/assets/ziran/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/ziran/params.json \
     vendor/nothing/Galaxian/proprietary/vendor/etc/camera/binary_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/binary_cache \
     vendor/nothing/Galaxian/proprietary/vendor/etc/camera/bokeh_caldata_uw_golden.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/bokeh_caldata_uw_golden.bin \
     vendor/nothing/Galaxian/proprietary/vendor/etc/camera/cache_front_main:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cache_front_main \
@@ -404,6 +541,11 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaxian/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/nothing/Galaxian/proprietary/vendor/etc/nhw:$(TARGET_COPY_OUT_VENDOR)/etc/nhw \
     vendor/nothing/Galaxian/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/nt_performance/activity_customization.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nt_performance/activity_customization.xml \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/nt_performance/nt_named_thread_affinity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nt_performance/nt_named_thread_affinity.xml \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/nt_performance/nt_perf_enhancer.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/nt_performance/nt_perf_enhancer.cfg \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/nt_performance/platform_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nt_performance/platform_config.xml \
+    vendor/nothing/Galaxian/proprietary/vendor/etc/nt_performance/scene_table.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nt_performance/scene_table.xml \
     vendor/nothing/Galaxian/proprietary/vendor/etc/panel-csot-nt37705-cmd-cli_pq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/panel-csot-nt37705-cmd-cli_pq.xml \
     vendor/nothing/Galaxian/proprietary/vendor/etc/panel-nt37705-1056-1068-dphy-cmd_pq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/panel-nt37705-1056-1068-dphy-cmd_pq.xml \
     vendor/nothing/Galaxian/proprietary/vendor/etc/panel-truly-td4330-cmd_pq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/panel-truly-td4330-cmd_pq.xml \
@@ -794,8 +936,10 @@ PRODUCT_PACKAGES += \
     libvpu \
     libvpu5 \
     libwa_depth \
+    libwa_opticalzoomfactor \
     libwa_refocus \
     libwa_rtdof \
+    libwa_sat \
     libwa_widelens_undistort \
     libwa_widelens_undistort_impl \
     libwifi-hal-mtk \
@@ -1165,8 +1309,6 @@ PRODUCT_PACKAGES += \
     libpqconfig \
     libpqparamparser \
     libvega_common \
-    libwa_opticalzoomfactor \
-    libwa_sat \
     mtk000_mipi_raw_IdxMgr \
     mtk000_mipi_raw_tuning \
     ov50d40_mipi_raw_IdxMgr \
@@ -1774,8 +1916,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libpqconfig_so \
     vendor_lib64_libpqparamparser_so \
     vendor_lib64_libvega_common_so \
-    vendor_lib64_libwa_opticalzoomfactor_so \
-    vendor_lib64_libwa_sat_so \
     vendor_lib64_mtk000_mipi_raw_IdxMgr_so \
     vendor_lib64_mtk000_mipi_raw_tuning_so \
     vendor_lib64_ov50d40_mipi_raw_IdxMgr_so \
