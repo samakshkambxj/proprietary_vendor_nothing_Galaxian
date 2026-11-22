@@ -6,6 +6,8 @@ soong_namespace {
     imports: [
         "device/nothing/Galaxian",
         "hardware/mediatek",
+        "hardware/mediatek/libion_mtk",
+        "hardware/mediatek/libmtkperf_client",
     ],
 }
 
@@ -5934,61 +5936,6 @@ cc_prebuilt_library_shared {
                 "libion_mtk",
                 "libion",
                 "libdmabufheap",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libion_mtk",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libion_mtk.so",
-            ],
-            shared_libs: [
-                "libion",
-                "liblog",
-                "libion_ulit",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libion_ulit",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libion_ulit.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libladder",
                 "libc++",
                 "libc",
                 "libm",
@@ -25711,6 +25658,10 @@ android_app_import {
     name: "NTCamera",
     owner: "nothing",
     apk: "proprietary/system_ext/priv-app/NTCamera/NTCamera.apk",
+    overrides: [
+        "Camera2",
+        "Aperture",
+    ],
     certificate: "platform",
     dex_preopt: {
         enabled: false,
@@ -25723,6 +25674,13 @@ android_app_import {
     name: "NTGallery",
     owner: "nothing",
     apk: "proprietary/system_ext/priv-app/NTGallery/NTGallery.apk",
+    overrides: [
+        "Glimpse",
+        "Gallery",
+        "Gallery3D",
+        "GalleryNew3D",
+        "Gallery2",
+    ],
     certificate: "platform",
     dex_preopt: {
         enabled: false,

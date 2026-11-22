@@ -807,8 +807,6 @@ PRODUCT_PACKAGES += \
     libhwm \
     libifcutils_mtk \
     libimagebuffer_wrapper \
-    libion_mtk \
-    libion_ulit \
     libjni_rater_api \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
